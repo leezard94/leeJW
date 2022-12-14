@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        section{
+
+            margin-top: 200px;
+            height: 400px;
+
+        }
+
+        div.center{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="center">
+    <form method="post" action="/writepro">
+        아이디: <input type="text" name="id"><br>
+
+       종족: <select name="race">
+              <option>-----</option>
+                <option>zerg</option>
+                 <option>terran</option>
+                 <option>protoss</option>
+             </select><br>
+
+       점수: <input type="text" name="ladder"><br>
+        맵: <input type="text" name="map"><br>
+    <input type="submit" value="sending"><br><br>
+
+
+    </form>
+    <a href="home"> 홈으로 </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>유저 목록</title>
+
+
+
+    <style>
+
+    section{
+
+            margin-top: 100px;
+            height: 400px;
+
+        }
+
+    div.center{
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    </style>
+
+
+
+</head>
+<body>
+<section>
+
+    <div class="center">
+
+        <a href="write">입력하러 가기</a>
+
+    <table>
+
+        <tr>
+            <td style="width: 80px;">아이디</td>
+            <td style="width: 80px;">종족</td>
+            <td style="width: 80px;">점수</td>
+            <td style="width: 120px;">맵</td>
+        </tr>
+        <tr th:each="star : ${list}">
+            <td th:text="${star.id}" ></td>
+            <td th:text="${star.race}"></td>
+            <td th:text="${star.ladder}"></td>
+            <td th:text="${star.map}"></td>
+
+    </table>
+                    <a href="/star/all">json</a>
+
+
+    </div>
+
+</section>
+
+
+
+</body>
+</html>
